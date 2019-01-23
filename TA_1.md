@@ -1,10 +1,10 @@
 ### Notas 1.0 
 
-Nuestra experiencia nos indica que existen sistemas algebráicos conformados por dos operaciones: multplicación y suma.  Los $\mathbb{Z}​$ son un ejemplo de estos sistemas. 
+Nuestra experiencia nos indica que existen sistemas algebraicos conformados por dos operaciones: multplicación y suma.  Los $\mathbb{Z}$ son un ejemplo de estos sistemas. 
 
 ¿Qué podemos hacer con los enteros? Forman un grupo abeliano bajo la suma. Además, la multiplicación es asociativa y conmutativa. Además existe un neutro multiplicativo (el $1​$).
 
-Los enteros serán nuestro sistema tipo de la estructura algebráica que deseamos estudiar: **los anillos**.
+Los enteros serán nuestro sistema tipo de la estructura algebraica que deseamos estudiar: **los anillos**.
 
 #### Contexto histórico
 
@@ -50,9 +50,9 @@ El estudio de los anillos se separa en dos: los anillos conmutativos y los no co
 
 5. Si $R$ es un anillo, los ponimios $R[x]$ forman un anillo.
 
-6.  El conjunto de funciones continuas con valores reales y variable real $x$ forma un anillo bajo las operaciones
+6.  El conjunto de funciones continuas con valores reales y variable real $x​$ forma un anillo bajo las operaciones
 
-   $$ [f + g](x) = f(x) + g(x) $$ y $$ [fg](x) = f(x) g(x)$$.
+   $$ [f + g] (x) = f(x) + g(x) $$ y $$ [fg] (x) = f(x) g(x)$$.
 
 7. Los entero módulo $6$ , $\mathbb{Z}_6$, forman un anillo conmutativo con elemento unitario.
 
