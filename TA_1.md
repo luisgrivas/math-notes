@@ -36,7 +36,7 @@ Cabe señalar que existen autores que además incluyen como axioma la existencia
 
 El estudio de los anillos se separa en dos: los anillos conmutativos y los no conmutativos. 
 
-*Definición Subanillo*. Subconjunto no vació de un anillo $R$ que también es anillo con las mismas operaciones.
+*Definición Subanillo*. Subconjunto no vació de un anillo $R$ que también es anillo con las mismas operaciones. *EDIT*: si $1 \in R$, entonces el subanillo también contiene al $1​$.
 
 #### Ejemplos
 
