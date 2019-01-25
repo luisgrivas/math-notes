@@ -26,7 +26,7 @@ Fue [Richard Dedekind](https://es.wikipedia.org/wiki/Richard_Dedekind) quién ex
 
 El término **anillo** se debe a David Hilbert.
 
-
+Para saber más sobre la historia del álgebra, ver [esto](http://www-groups.dcs.st-and.ac.uk/history/HistTopics/Ring_theory.html)
 
 #### Definiciones 
 
