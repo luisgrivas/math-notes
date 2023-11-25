@@ -38,7 +38,7 @@ Solo haga $E_k = \emptyset$, para $k > N$.
 **Ejemplo 5**: Sea $(X, S)$ el espacio medible del **Ejemplo 3** con $X$ no numerable. Definamos $\mu$ como $\mu(A) = 0$ si $A$ es numerable y $\mu(A) = 1$ si $A^c$ es numerable.
 Entonces $\mu$ es una medida en este espacio. ¿Cuántas medidas podemos definir en este espacio? 
 
-**Ejemplo 6**: Sea $(X, S) un espacio medible. Definamos $\mu(E) = |E|$ si $E$ es finito y $\mu(E) = \infty $ si $E$ es infinito. Entonces $\mu$ es una medida en este espacio. A esta medida se le conoce como **medida de contar**. Es claro que solo necesitamos verificar sigma-aditividad. Sea $\{E_k\}$ una colección numerable y disjunta de elementos en $S$. Si alguno de estos $E_k$ es infinito, entonces claramente se satisface la propiedad 3.BLABLA 
+**Ejemplo 6**: Sea $(X, S)$ un espacio medible. Definamos $\mu(E) = |E|$ si $E$ es finito y $\mu(E) = \infty$ si $E$ es infinito. Entonces $\mu$ es una medida en este espacio. A esta medida se le conoce como **medida de contar**. Es claro que solo necesitamos verificar sigma-aditividad. Sea $\{E_k\}$ una colección numerable y disjunta de elementos en $S$. Si alguno de estos $E_k$ es infinito, entonces claramente se satisface la propiedad 3.BLABLA 
 
 Es importante señalar que la propiedad 3 implica **monotonía**. Es decir, si $A, B\in S$ y $A \subset B$, entones $\mu(A) \leq \mu(B)$. Para ver esto, haga $B = (B \setminus A) \cup A$. Luego, $\mu(B) = \mu(B \setminus A) + \mu(A)$. Lo cual implica $\mu(A) \leq \mu(B)$. 
 
