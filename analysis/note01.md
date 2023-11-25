@@ -45,6 +45,7 @@ Es importante señalar que la propiedad 3 implica **monotonía**. Es decir, si $
 También, una forma bonita de calcular medidas de **sucesiones decrecientes**. Si $\{E_k\}$ es una colección decreciente de conjuntos medibles, entonces
 $$\mu(\bigcap_k E_k) = \lim_k \mu(E_k).$$
 > Idea: serie telescópica
+
 Haga $E = \bigcap E_k$ y note que $E_1 = E \cup \bigcup_k (E_k \setminus E_{k+1})$ es una unión disjunta. Entonces (todo jala), 
 $\mu(E_1) = \mu(E) + \sum_{k=1}^\infty \mu(E_k \setminus E_{k+1}) = \mu(E) = \lim \mu(E_k)$. 
 
