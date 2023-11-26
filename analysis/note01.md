@@ -42,7 +42,8 @@ Entonces $\mu$ es una medida en este espacio. ¿Cuántas medidas podemos definir
 
 Es importante señalar que la propiedad 3 implica **monotonía**. Es decir, si $A, B\in S$ y $A \subset B$, entones $\mu(A) \leq \mu(B)$. Para ver esto, haga $B = (B \setminus A) \cup A$. Luego, $\mu(B) = \mu(B \setminus A) + \mu(A)$. Lo cual implica $\mu(A) \leq \mu(B)$. 
 
-También, una forma bonita de calcular medidas de **sucesiones decrecientes**. Si $\{E_k\}$ es una colección decreciente de conjuntos medibles, entonces
+También, una forma bonita de calcular medidas de **sucesiones decrecientes**. Si $\{E_k\}$ es una colección decreciente de conjuntos medibles y $\mu(E_1) < \infty$ :exclamation:
+, entonces
 $$\mu(\bigcap_k E_k) = \lim_k \mu(E_k).$$
 > Idea: serie telescópica
 
@@ -55,7 +56,14 @@ Haga $A_k = E_k \setminus (\bigcup_{i=1}^{i < k} E_i)$. La sucesión $\{A_k\}$ e
 $A_k \subset E_k$. Entonces
 $$\mu\left(\bigcup_k E_k \right) = \sum_k \mu(A_k) \leq \sum_k \mu(E_k) $$
 
+**Nota:** La hipótesis $\mu(E_1)< \infty$ no se puede eliminar. Considere la sucesión $E_k = [k, \infty)$ con $k\in \mathbb{Z}$. Esta sucesión es decreciente, y $\bigcap_k E_k = \emptyset$, por lo que su medida es cero. No obstante, $\mu(E_k) = \infty$. 
 
+De la misma manera, tengo el teorema para el caso de sucesiones crecientes. Sea $\{E_k\}$ una sucesión creciente de conjuntos medibles. Entonces
+
+$$\mu\left( \bigcup_{k=1}^{\infty}{E_k} \right) =  \lim_{k \to \infty} \mu(E_k).$$
+
+Considere $A_k = E_k \setminus (\bigcup_i E_i)$ (hasta $i < k$) y repita el argumento anterior.
+    
 En lo siguiente, presentaremos cierta terminología que utilizaremos en notas posteriores.En primer lugar, decimos que una medida $\mu$ es **finita** si $\mu(X) < \infty$. Decimos que una **medida es sigma-finita**, si  existe una sucesión $\{A_k\}$ de conjuntos medibles tal que $X = \bigcup A_k$ y $\mu(A_k) < \infty$. 
 
 **Ejemplo 7**. Los reales con la descomposición $[n, n+1]$ con $n\in \mathbb{Z}$ muestra que la medida de lebesgue en $\mathbb R$ es sigma-finita. 
