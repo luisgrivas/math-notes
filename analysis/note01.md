@@ -26,7 +26,7 @@ Ahora bien, tenemos el concepeto de espacio medible, pero, ¿cómo lo medimos? N
 
 1. $\mu: S \rightarrow [0, \infty]$, es decir, la medida de los conjuntos es no negativa y puede ser infinito. Veremos más adelante algunos ejemplos que no satisfacen esto.
 2. $\mu(\emptyset) = 0$; lo cual, tiene sentido.
-3. $mu\left(\bigcup_{k=1}^\infty E_k\right) = \sum_{k=1}^\infty \mu(E_k),$ para toda colección numerable y disjunta de conjuntos medibles $E_k$. A esta propiedad se le conoce como sigma-aditividad.
+3. $mu\left(\bigcup_{k=1} E_k \right) = \sum_{k=1} \mu(E_k),$ para toda colección numerable y disjunta de conjuntos medibles $E_k$. A esta propiedad se le conoce como sigma-aditividad.
 
 Nótese que la tercera propiedad implica **aditividad finita**. Es decir, 
 $$\mu\left(\bigcup_{k=1}^N E_k\right) = \sum_{k=1}^N \mu(E_k).$$
@@ -47,11 +47,11 @@ $$\mu(\bigcap_k E_k) = \lim_k \mu(E_k).$$
 > Idea: serie telescópica
 
 Haga $E = \bigcap E_k$ y note que $E_1 = E \cup \bigcup_k (E_k \setminus E_{k+1})$ es una unión disjunta. Entonces (todo jala), 
-$\mu(E_1) = \mu(E) + \sum_{k=1}^\infty \mu(E_k \setminus E_{k+1}) = \mu(E) = \lim \mu(E_k)$. 
+$\mu(E_1) = \mu(E) + \sum_{k=1} \mu(E_k \setminus E_{k+1}) = \mu(E) = \lim \mu(E_k)$. 
 
 También, en general tenemos la siguiente desigualdad: 
 $$\mu(\bigcup_k E_k) \leq \sum_{k} \mu(E_k).$$
-Haga $A_k = E_k \setminus (\bigcup_{i=1}^{i < k})$. La sucesión $\{A_k\}$ es disjunta y 
+Haga $A_k = E_k \setminus (\bigcup_{i=1}^{i < k} E_i)$. La sucesión $\{A_k\}$ es disjunta y 
 $A_k \subset E_k$. Entonces
 $$\mu\left(\bigcup_k E_k \right) = \sum_k \mu(A_k) \leq \sum_k \mu(E_k) $$
 
