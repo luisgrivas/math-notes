@@ -4,7 +4,7 @@ Un **espacio medible** es una pareja $(X, S)$ en la que $X$ es un conjunto y $S$
 * Los conjuntos $\emptyset, X$ pertenecen a $S$.
 * Si $A \in S$, entonces $A^c \in S$. Es decir, tenemos cerradura bajo complementos.
 * Si $\{A_k\}$ es una colección numerable de conjuntos en $S$, entonces la unión también lo está:
-$$ \bigcup_{k=1}^\infty A_k \in S.$$
+$$\bigcup_{k=1}^{\infty}{A_k} \in S.$$
 
 A los elementos de $S$ les llamamos **conjuntos medibles**. Veamos algunos ejemplos.
 
