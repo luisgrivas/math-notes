@@ -3,7 +3,7 @@ _fecha: 28 de noviembre de 2023_
 
 
 La construcción de la siguiente teoría de integración se realiza de manera secuencial, definiendo primero la integral de las funciones medibles _más simples_. Si 
-$$\varphi = \sum_{k=1}^{n}{a_i \chi_{A_i},$$
+$$\varphi = \sum_{k=1}^{n}{a_i \chi_{A_i}},$$
 es una función simple no negativa. Entonces, definimos su integral como
 $$\int_E \varphi d\mu = \sum_{k=1}^{n} a_i \mu(A_i \cap E).$$
 > Base por altura y sumar.
