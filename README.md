@@ -1,2 +1,1 @@
-# mate-notas
-Notas de clases
+# Math Notes
