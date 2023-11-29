@@ -23,4 +23,11 @@ $$\int f d\mu = \sup \{ \int \varphi d\mu: 0\leq \varphi \leq f, \varphi \text{ 
 
 Primero, el famoso **Teorema de Fatou**:
 $$ \int_E f \liminf \int_E f_n, $$
-para sucesiones de funciones medibles $\{f_n\}$ con $f_n \to f$.
+para sucesiones de funciones medibles no negativas $\{f_n\}$ con $f_n \to f$.
+
+> El teorema no requiere demasiado
+_Demostración_: Utilizando la definición queremos demostrar que: para toda función simple no negativa $\varphi$ con $\varphi \leq f$, se tiene que $\int_E \varphi \leq \liminf \int_E f_n$.
+> De nuevo, la idea de utilizar funciones simples.
+
+Si $\int_E \varphi = \infty$, entonces existe un conjunto medible $A\subset E$ tal que $\mu(A) = \infty$ y $\varphi > a > 0$ en $A$.
+
