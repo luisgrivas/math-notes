@@ -38,7 +38,7 @@ La sucesión $\{A_n\}$ es creciente y su unión contiene a $A$ ```recuerde que f
 
 Ahora considere el caso $\int \varphi < \infty$. Entonces existe medible $A \subset E$ con $\mu(A) < \infty$ y $\varphi(E \setminus A) = \{0\}$. Sea $M$ el máximo de $\varphi$ ```la función tiene un número finito de valores```y sea $\epsilon > 0$. 
 
-Defina la sucesión $$A_n = \{x \in E: f_k(x) > (1-\epsilon) \varphi(x) \text{ para todo }k \ge n \}$$. Entonces la sucesión $\{A_n\}$ es creciente y su unión contiene a $A$. Sea $\{B_n = A \setminus A_n\}: es decreciente y su intersección es vacío. Por tanto, $\lim \mu(B_n) = 0$ ```de nuevo, la medida se porta bien con los límites de conjuntos```. Entonces, existe $n \in \mathbb{N}$ tal que $\mu(A \setmius A_k) < 0$. Entonces, para todo $k \ge n$, se tiene que 
+Defina la sucesión $$A_n = \{x \in E: f_k(x) > (1-\epsilon) \varphi(x) \text{ para todo }k \ge n \}$$. Entonces la sucesión $\{A_n\}$ es creciente y su unión contiene a $A$. Sea $\{B_n = A \setminus A_n\}$: es decreciente y su intersección es vacío. Por tanto, $\lim \mu(B_n) = 0$ ```de nuevo, la medida se porta bien con los límites de conjuntos```. Entonces, existe $n \in \mathbb{N}$ tal que $\mu(A \setminus A_k) < 0$. Entonces, para todo $k \ge n$, se tiene que 
 $$\int f_k \ge int_{A_k} f_k \ge (1-\epsilon) \int_{A_k} \varphi \ge \int \varphi - \epsilon \left[ \int \varphi  + M \right]$$. 
 Por tanto, $\liminf \int f \ge \int \varphi$.  _QED_
 
