@@ -29,5 +29,11 @@ para sucesiones de funciones medibles no negativas $\{f_n\}$ con $f_n \to f$.
 _Demostración_: Utilizando la definición queremos demostrar que: para toda función simple no negativa $\varphi$ con $\varphi \leq f$, se tiene que $\int_E \varphi \leq \liminf \int_E f_n$.
 > De nuevo, la idea de utilizar funciones simples.
 
-Si $\int_E \varphi = \infty$, entonces existe un conjunto medible $A\subset E$ tal que $\mu(A) = \infty$ y $\varphi > a > 0$ en $A$.
+Si $\int_E \varphi = \infty$, entonces existe un conjunto medible $A\subset E$ tal que $\mu(A) = \infty$ y $\varphi > a > 0$ en $A$. Sea
+$$A_n = \{x \in E: f_k(x) > a \text{ para todo } k \ge n \}.$$
 
+> Ahora, utilizamos una sucesión de conjuntos medibles
+
+La sucesión $\{A_n\}$ es creciente y su unión contiene a $A$ ```recuerde que f_n converge a f```. Entonces $\lim \mu(A_n) = \infty$. ```la medida se porta bonito con límite de sucesiones crecientes```. Dado que $\int f_n \ge a \mu(A_n)$,  aplicando límites obtenemos que $\lim \int f_n = \infty = \int \varphi$.
+
+Ahora considere el caso $\int \varphi < \infty$. Entonces existe medible $A \subset E$ con $\mu(A) < \infty$ y $\varphi(E \setminus A) = \{0\}$.  
