@@ -83,8 +83,9 @@ El último teorema de esta sección, es el **Teorema de Convergencia de Lebesgue
 
 **Teorema**. Sea $g$ una función integrable en $E$ y suponga que $\{f_n\}$ es una sucesión de funciones medibles tales que $\lvert f_n \rvert \le g$, casi siempre en $E$. Si $f_n \to f$, entones
 $$\int_E f = \lim_n \int f_n.$$
-_Demostración_. Considere las sucesiones $\{g + f_n\}$ y $\{g - f_n\}$. Ambas sucesiones constan de funciones medibles no negativas ```aplique la desigualdad | f_k | <= g ```. El lema de Fatou implica que 
-$$ \int g \pm \int f \leq \liminf \int (g \pm f_n).$$
+_Demostración_. Considere las sucesiones $\{g + f_n\}$ y $\{g - f_n\}$. Ambas sucesiones constan de funciones medibles no negativas ```aplique la desigualdad | f_k | <= g```. El lema de Fatou implica que 
+$$\int g +- \int f \leq \liminf \int (g +- f_n).$$
+
 Por otro lado, $\liminf \int(g + f_n) = \int g + \liminf f_n$ y $\liminf \int(g - f_n) =\int g - \limsup \int f_n$. Luego
 $$\limsup \int f_n \le \int f \le \liminf \int f_n \limsup \int f_n,$$
 y esto solo es posible si $\lim_n \int f_n  =\int f$.
