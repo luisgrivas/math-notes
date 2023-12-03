@@ -13,11 +13,22 @@ $$\nu(E) = \int_E f d\mu.$$
 Note que, $\nu(\emptyset) = 0$. Sea $\{A_n\}$ una colección numerable y disjunta de conjuntos medibles y sea $A = \bigcup_n A_n$. Considere la sucesión $f_n = \chi_{A_n} f$. Como $\{A_n\}$ es disjunta, $\sum_n f_n = f$. Luego, por un corolario del Teorema de Convergencia Monótona, se tiene que 
 $$\nu(A) = \int_A f d\mu = \int \sum_n f_n d\mu = \sum_n \int f_n d\mu = \sum_n \nu(A_n).$$
 Por tanto, $\nu$ es una medida en $(X, S)$. Note además, que si $\mu(A) = 0$, entonces $\nu(A) = 0$, es decir, $\nu \ll \mu$.
+
 > Es natural preguntarse, en qué medida esto ocurre de manera general. 
-Además, si $f$ es integrable (esto es, \int f < \infty$). El siguiente teorema establece que el converso es cierto, bajo ciertas restricciones. 
+
+Además, si $f$ es integrable (esto es, $\int f < \infty$). El siguiente teorema establece que el converso es cierto, bajo ciertas restricciones. 
+
 > Solo requerimos que la medida sea sigma-finita. 
 
 **Teorema** (de Radon-Nikodym). Sea $(X, S, \mu)$ un espacio de medida sigma-finita y sea $\nu$ definida en $(X, S)$ una medida absolutamente continua con respecto a $\mu$. Entonces existe una función medible y no negativa $f$, tal que para todo conjunto medible $E$, se tiene que 
 $$\nu(E) = \int_E f d\mu.$$
 Esta función es **única**, en el sentido de que si existe alguna otra función $g$ con esta propiedad, entonces $f = g$ c.d con respecto a $\mu$.
+
+Para demostrar este resultado, es necesario primero demostrar el siguiente resultado.
+
+**Lema 1**. Sea $D$ un conjunto numerable y para cada $\alpha \in D$, sea $B_\alpha$ un conjunto medible. Si para cualesquiera $\alpha, \beta \in D$ con $\alpha < \beta$ se tiene que $B_\alpha \subset B_\beta$, entonces existe una función medible $f$ tal que $f \le \alpha$ en $B_\alpha$ y $f \le \alpha$ para $X \setminus B_\alpha$.
+_Demostración_: Defina toda $x\in X$,  $f(x) = \inf\{\alpha \in D: x \in B_\alpha\}$. ```note que f(x) = infinito, si no existe conjunto B que cubra a x```. Sea $x \in B_\alpha$. Entonces, por definición, $f(x) \le \alpha$. Si $x \notin B_\alpha$, entonces no existe $B_\beta$ con $x \in B_\beta$ y $\beta \le \alpha$, pues de lo contrario, $x \in B_\beta \subset B_\alpha$. Entonces, $f(x) \ge \alpha$. Para ver que $f$ es medible, sea $a \in \mathbb{R}$. Entonces, 
+$$f^{-1}((a, \infty)) = \bigcup_{a \leq \alpha} B_\alpha,$$
+por lo que es un conjunto medible. Por tanto $f$ es medible.
+
 
