@@ -31,4 +31,7 @@ _Demostración_: Defina toda $x\in X$,  $f(x) = \inf\{\alpha \in D: x \in B_\alp
 $$f^{-1}((a, \infty)) = \bigcup_{a \leq \alpha} B_\alpha,$$
 por lo que es un conjunto medible. Por tanto $f$ es medible.
 
+> El siguiente lema es parte central de la demostración del Teorema de RN
+**Lema 2**. Sea $C  = \bigcup_{\alpha < \beta} (B_\alpha \setminus B_\beta)$. Entonces $\mu(C) = 0$. Defina $B^\prime_\alpha = B_\alpha \cup C$ ```definimos una nueva familia, para aplicar el lemma 1```. Si $\alpha < \beta$, entonces $B^\prime_\alpha \setminus B^\prime_\beta = (B_\alpha \setminus B_\beta) \setminus C = \emptyset$, en otras palabras, $B^\prime_\alpha \subset B^\prime_\beta$. Por el lema anterior, existe una función medible $f$ tal que $f\le \alpha$ en $B^\prime_\alpha$ y $f\ge \alpha$ en $X \setminus B^\prime_\alpha$. Luego, $f \le \alpha$ en $B_\alpha$ y $f \ge \alpha$ en $X \setminus B_\alpha$ excepto en $C$, cuya medida es cero.  
 
+_Demostración del Teorema de Radon-Nikodym_: 
