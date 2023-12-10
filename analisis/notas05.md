@@ -32,6 +32,39 @@ $$f^{-1}((a, \infty)) = \bigcup_{a \leq \alpha} B_\alpha,$$
 por lo que es un conjunto medible. Por tanto $f$ es medible.
 
 > El siguiente lema es parte central de la demostración del Teorema de RN
+
 **Lema 2**. Sea $C  = \bigcup_{\alpha < \beta} (B_\alpha \setminus B_\beta)$. Entonces $\mu(C) = 0$. Defina $B^\prime_\alpha = B_\alpha \cup C$ ```definimos una nueva familia, para aplicar el lemma 1```. Si $\alpha < \beta$, entonces $B^\prime_\alpha \setminus B^\prime_\beta = (B_\alpha \setminus B_\beta) \setminus C = \emptyset$, en otras palabras, $B^\prime_\alpha \subset B^\prime_\beta$. Por el lema anterior, existe una función medible $f$ tal que $f\le \alpha$ en $B^\prime_\alpha$ y $f\ge \alpha$ en $X \setminus B^\prime_\alpha$. Luego, $f \le \alpha$ en $B_\alpha$ y $f \ge \alpha$ en $X \setminus B_\alpha$ excepto en $C$, cuya medida es cero.  
 
-_Demostración del Teorema de Radon-Nikodym_: 
+_Demostración del Teorema de Radon-Nikodym_: Primero asuma que tanto $\nu$ como $\mu$ son medidas finitas. Para cada racional $\alpha$, sea $\nu - \alpha \mu$ ```una medida con signo```. Sea $(A_\alpha, B_\alpha)$ la **descompisición de Hahn** para $\nu - \alpha \mu$y tome $A_0 = X$, $B_0 = \emptyset$.
+
+Ahora bien, note que $B_\alpha \setminus B_\beta = B_\alpha A_\beta$. Por tanto, $(\nu - \alpha \mu)(B_\alpha \setminus B_\beta) \le 0$ y $(\nu - \beta \mu)(B_\alpha \setminus B_\beta) \ge 0$ ```partes, negativas y positivas resp```. Si $\beta > \alpha$, entonces $(\nu - \alpha \mu)(B_\alpha \setminus B_\beta) - (\nu - \beta \mu)(B_\alpha \setminus B_\beta) = (\beta - \alpha) \mu(B_\alpha \setminus B_\beta) = 0$, lo que implica que $\mu(B_\alpha - B_\beta) = 0$. Aplicando el **Lema 2**, podemos encontrar una función medible $f$ tal que $f \ge \alpha$ en $A_\alpha$ ```recuerda que este es el complemento de B``` y $f \le \alpha$ en $B_\alpha$. Dado que $B_\beta = \emptyset$, podemos escoger a $f$ no negativa.   
+
+> Demostraremos que esta $f$ es la que funciona.
+
+Sea $E$ un conjunto medible. Considere la siguiente sucesión 
+$$E_k = E \cap \left(B_{(k+1)/N} \setminus B_{k / N} \right), \ \ \ E_\infty = E \setminus \bigcup_k B_{k /N}$$
+
+Note que $E = E_\infty \cup \bigcup_k E_k$ es una unión disjunta, por lo que 
+$$\nu(E) = \nu(E_\infty) + \sum_k \nu(E_k).$$
+
+Dado que $E_k \subset B_{(k+1)/N} \cap A_{k/N}$, se tiene que $k/N \le f \le (k+1)/N$ en $E_k$, y por monotonía de la integral
+$$ k/N \mu(E_k) \le \int_{E_k} f \mu \le (k+1)/N \mu(E_k).$$
+
+Dado que $k/N \mu(E_k) \le \nu(E_k) \le (k+1)/N \mu(E_k)$, ```recuerde que estos están en término de B, hay que recordar las desigualdades del inicio```, se tiene que 
+$$\nu(E_k) - 1/N \mu(E_k) \le \int_{E_k} f d \mu \le \nu(E_k) + 1 / N \mu(E_k).$$
+```juntar con la desigualdad anterior```
+
+> Queremos demostrar que $\nu$ y la integral de $f$ coinciden en el conjunto $E_\infty$.
+
+En $E_\infty$, se tiene que $f = \infty$ ```f es mayor a todo k+1/N con k en los naturales```. SI $\mu(E_\infty) > 0$, $\nu(E_\infty) = \infty$, dado que $(\nu - \alpha \mu)(E_\infty) $ es positvo para toda $\alpha$. Si $\mu(E_\infty) = 0$, entonces $\nu(E_\infty) = 0$, por tener $\nu \ll \mu$ ```aquí es el único lugar donde hemos utilizado esta hipótesis?```. En ambos casos se tiene que 
+$$ \nu(E_\infty) = \int_{E_\infty} f d\mu$$
+
+> Teorema de Convergencia Monótona...
+
+Por lo que 
+$$\nu(E) - 1/N \nu(E) \le \int_E f d\mu \le \nu(E) + 1/N \mu(E).$$
+
+Como $\nu(E)$ es finito y $N$ es arbitraria, $\nu(E) = \int_E f d\mu$.
+
+A la función $f$ del Teorema de Radon - Nikodym se le conoce como **la derivada Radon-Nikodym** de $\nu$. Frecuentemente se le denota como
+$$\left[ \frac{d\nu}{d\mu} \right].$$
