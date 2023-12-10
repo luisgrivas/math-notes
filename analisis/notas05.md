@@ -48,7 +48,7 @@ Note que $E = E_\infty \cup \bigcup_k E_k$ es una unión disjunta, por lo que
 $$\nu(E) = \nu(E_\infty) + \sum_k \nu(E_k).$$
 
 Dado que $E_k \subset B_{(k+1)/N} \cap A_{k/N}$, se tiene que $k/N \le f \le (k+1)/N$ en $E_k$, y por monotonía de la integral
-$$ k/N \mu(E_k) \le \int_{E_k} f \mu \le (k+1)/N \mu(E_k).$$
+$$k/N \mu(E_k) \le \int_{E_k} f \mu \le (k+1)/N \mu(E_k).$$
 
 Dado que $k/N \mu(E_k) \le \nu(E_k) \le (k+1)/N \mu(E_k)$, ```recuerde que estos están en término de B, hay que recordar las desigualdades del inicio```, se tiene que 
 $$\nu(E_k) - 1/N \mu(E_k) \le \int_{E_k} f d \mu \le \nu(E_k) + 1 / N \mu(E_k).$$
@@ -56,7 +56,7 @@ $$\nu(E_k) - 1/N \mu(E_k) \le \int_{E_k} f d \mu \le \nu(E_k) + 1 / N \mu(E_k).$
 
 > Queremos demostrar que $\nu$ y la integral de $f$ coinciden en el conjunto $E_\infty$.
 
-En $E_\infty$, se tiene que $f = \infty$ ```f es mayor a todo k+1/N con k en los naturales```. SI $\mu(E_\infty) > 0$, $\nu(E_\infty) = \infty$, dado que $(\nu - \alpha \mu)(E_\infty) $ es positvo para toda $\alpha$. Si $\mu(E_\infty) = 0$, entonces $\nu(E_\infty) = 0$, por tener $\nu \ll \mu$ ```aquí es el único lugar donde hemos utilizado esta hipótesis?```. En ambos casos se tiene que 
+En $E_\infty$, se tiene que $f = \infty$ ```f es mayor a todo k+1/N con k en los naturales```. SI $\mu(E_\infty) > 0$, $\nu(E_\infty) = \infty$, dado que $(\nu - \alpha \mu)(E_\infty)$ es positvo para toda $\alpha$. Si $\mu(E_\infty) = 0$, entonces $\nu(E_\infty) = 0$, por tener $\nu \ll \mu$ ```aquí es el único lugar donde hemos utilizado esta hipótesis?```. En ambos casos se tiene que 
 $$ \nu(E_\infty) = \int_{E_\infty} f d\mu$$
 
 > Teorema de Convergencia Monótona...
@@ -68,3 +68,10 @@ Como $\nu(E)$ es finito y $N$ es arbitraria, $\nu(E) = \int_E f d\mu$.
 
 A la función $f$ del Teorema de Radon - Nikodym se le conoce como **la derivada Radon-Nikodym** de $\nu$. Frecuentemente se le denota como
 $$\left[ \frac{d\nu}{d\mu} \right].$$
+
+
+**Teorema de Descomposición de Lebesgue**. Sea $(X, S, \mu)$ un espacio de medida sigma-finito y $\nu$ una medida sigma-finita definida en $S$. Entonces existe una medida singular $\nu_0$ respecto a $\mu$ y una medida $\nu_1$ absolutamente continua respecto a $\mu$ tales que $\nu = \nu_0 + \nu_1$. Estas medidas son _únicas_.
+
+> Podemos relacionar una medida respecto a otra, descomponiéndola en una dos partes: la parte que es absolutamente continua y la otra que es singular. 
+
+
